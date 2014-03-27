@@ -1,0 +1,38 @@
+{
+  "name": "generator-beautifulsop",
+  "version": "0.0.1",
+  "description": "Yeoman generator to convert markdowns into PDFs",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "maman/generator-beautifulsop",
+  "author": {
+    "name": "Achmad Mahardi",
+    "email": "achmad@mahardi.me",
+    "url": "https://github.com/maman"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "grunt-cli": "^0.1.13",
+    "bower": "^1.3.1",
+    "yo": "^1.1.2"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

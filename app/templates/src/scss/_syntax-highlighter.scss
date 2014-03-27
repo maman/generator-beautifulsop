@@ -1,0 +1,161 @@
+/**
+ * Based on prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code, code[class*="lang-"],
+pre, pre[class*="lang-"] {
+  color: black;
+  font-family: monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre, pre[class*="lang-"] {
+  position:relative;
+  padding: 1em;
+  margin: .5em 0;
+  background-origin:content-box;
+  overflow:visible;
+  max-height:30em;
+}
+
+code, code[class*="lang"] {
+  max-height:29em;
+  display:block;
+  overflow:scroll;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="lang-"],
+pre[class*="lang-"] {
+  background-color:#fdfdfd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code, code[class*="lang-"] {
+  display: inline;
+}
+
+pre[class*="lang-"]:before,
+pre[class*="lang-"]:after {
+  content: '';
+  z-index: -2;
+  display:block;
+  position: absolute;
+  bottom: 0.75em;
+  left: 0.18em;
+  width: 40%;
+  height: 20%;
+  -webkit-box-shadow: 0px 13px 8px #979797;
+  -moz-box-shadow: 0px 13px 8px #979797;
+  box-shadow: 0px 13px 8px #979797;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="lang-"]:after,
+pre[class*="lang-"]:after {
+  right: 0.75em;
+  left: auto;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.comment,
+.block-comment,
+.prolog,
+.doctype,
+.cdata {
+  color: #7D8B99;
+}
+
+.punctuation {
+  color: #5F6364;
+}
+
+.property,
+.tag,
+.boolean,
+.number,
+.function-name,
+.constant,
+.symbol {
+  color: #c92c2c;
+}
+
+.selector,
+.attr-name,
+.string,
+.function,
+.builtin {
+  color: #2f9c0a;
+}
+
+.operator,
+.entity,
+.url,
+.variable {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.atrule,
+.attr-value,
+.keyword,
+.class-name {
+  color: #1990b8;
+}
+
+.regex,
+.important {
+  color: #e90;
+}
+.lang-css .string,
+.style .string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.important {
+  font-weight: normal;
+}
+
+.entity {
+  cursor: help;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+/* Plugin styles */
+.tab:not(:empty):before,
+.cr:before,
+.lf:before {
+  color: #e0d7d1;
+}
