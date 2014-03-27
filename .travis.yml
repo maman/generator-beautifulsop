@@ -1,7 +1,13 @@
 language: node_js
-node_js:
-  - '0.10'
-before_install:
-  - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-beautifulsop' ]; then cd .. && eval "mv $currentfolder generator-beautifulsop" && cd generator-beautifulsop; fi
-
+node_js: 
+- "0.10"
+before_install: 
+- currentfolder=${PWD##*/}
+- if [ "$currentfolder" != 'generator-beautifulsop' ]; then cd .. && eval "mv $currentfolder generator-beautifulsop" && cd generator-beautifulsop; fi
+deploy: 
+  provider: npm
+  email: achmad@mahardi.me
+  on: 
+    tags: true
+  api_key: 
+    secure: HZARtLPi5oPbhMsD3u4E1cIkD6rAQB3s2e0+/cjCGCmyQPVEHENGWlj21U0DPX8C+IfoZed92P8UIIIQaGzKOwpde0nf4Dg4rpje9sGOlBSCX7rx+IrxLDbDES0XwLfzOALDGOtOft9hfbIb86Opynk8Lrvf3scUjH2TSmV8ygk=
