@@ -1,5 +1,7 @@
 ![beautifulsop-screenshot](http://cl.ly/UaSO/Screen%20Shot%202014-03-23%20at%208.32.07%20PM.png)
 
+[![Build Status](https://travis-ci.org/maman/generator-beautifulsop.svg?branch=master)](https://travis-ci.org/maman/generator-beautifulsop)
+
 BeautifulSOP is a Markdown to PDF converter. She process your markdown files into a PDF document, perfect for constructing a Standard Operation Procedure (SOP) documents. 
 
 ### Why BeautifulSOP?
