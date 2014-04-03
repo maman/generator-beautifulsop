@@ -1,6 +1,6 @@
 {
   "name": "generator-beautifulsop",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yeoman generator to convert markdowns into PDFs",
   "license": "MIT",
   "main": "app/index.js",
