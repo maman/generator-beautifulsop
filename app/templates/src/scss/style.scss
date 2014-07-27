@@ -61,14 +61,18 @@ ul, ol {
 ol {
     counter-reset: ol;
     display: table;
+    li {
+      counter-increment: ol;
+      &::before {
+        content: counter(ol) ".";
+      }
+    }
 }
 li {
     list-style: none;
-    counter-increment: ol;
     display: table-row;
 }
 li::before {
-    content: counter(ol) ".";
     display: table-cell;
     text-align: right;
     padding-right: .3em;
